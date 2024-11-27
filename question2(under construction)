@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	FILE *fp1,*fp2,*fp3,f2,f3;
+	int c;
+	int a[]={1,2,4,3,6,5,7,33,90};
+	fp1=fopen("DATA.txt","w+");
+	fp2=fopen("EVEN.txt","w+");
+	fp3=fopen("ODD.txt","w+");
+	f2=fopen("EVEN.txt","a+");
+	f3=fopen("ODD.txt","w+");
+	fprintf("%d",a);
+	fseek(fp1,0,0);
+	while((c=getw(fp1))!=EOF)
+	{
+	  if(c%2==0)
+	   fprintf(fp2a,"%d ",c);
+	  else
+	   fprintf(fp3a,"%d",c);
+	  fseek(fp1,1,1);
+	}
+	fclose(fp1);
+	fclose(fp2);
+	fclose(fp3);
+	fclose(fp2a);
+	fclose(fp3a);
+}
