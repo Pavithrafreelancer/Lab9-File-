@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    FILE *fp,*f;
+    char a[100]="Electronics And Communiation Engineering";
+	fp=fopen("INPUT.txt","w");
+    fprintf(fp,"%s",a);
+    fscanf(f,"%s",a);
+	fclose(fp);
+    fclose(f);
+}
