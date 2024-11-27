@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	FILE *fp,*;
+	char c;
+	fp=fopen("FILE1.txt","w+");
+	fpc=fopen("FILE2.txt","w+");
+	fprintf(fp,"National Institute Of Technology");
+	fseek(fpc,0,0);
+	fseekf(fp,0,0);
+	while((c=get(fp))!=EOF)
+	  {
+	  	putw(fp,fpc);
+	  	fseek(fp,1,1);
+	  	fseek(fpc,1,1);
+	  }
+	fscanf();//print FILE2
+	fclose(fp);
+	fclose(fpc);
+}
